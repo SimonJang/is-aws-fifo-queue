@@ -10,7 +10,9 @@
 		"format": "prettier --write \"source/**/*.ts\" \"lib/**/*.js\"",
 		"build": "npm run clean && tsc -p tsconfig.json",
 		"test": "npm run format && npm run lint && nyc ava",
-		"clean": "del-cli lib"
+		"clean": "del-cli lib",
+		"prepare": "npm run test && npm run build",
+		"deploy": "npm run prepare && npx np"
 	},
 	"engines": {
 		"node": ">=8"
