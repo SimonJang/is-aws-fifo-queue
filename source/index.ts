@@ -7,4 +7,6 @@ export function isAWSFifoQueue(name: string): boolean {
 	return /^[a-zA-Z_-]{1,75}\.fifo/.test(name);
 }
 
-export default isAWSFifoQueue;
+export default {
+	isAWSFifoQueue
+};
