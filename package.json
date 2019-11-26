@@ -22,7 +22,7 @@
 		"FIFO"
 	],
 	"files": [
-		"lib/**/*"
+		"lib"
 	],
 	"author": {
 		"name": "SimonJang",
