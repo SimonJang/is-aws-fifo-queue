@@ -1,6 +1,6 @@
 {
 	"name": "is-aws-fifo-queue",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Utility to check based on a queue name, that it is or could be an AWS SQS FIFO queue",
 	"repository": "https://github.com/SimonJang/is-aws-fifo-queue",
 	"main": "lib/index.js",
