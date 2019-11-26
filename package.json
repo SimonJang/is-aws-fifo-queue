@@ -9,10 +9,8 @@
 		"lint": "tslint -p . --format stylish",
 		"format": "prettier --write \"source/**/*.ts\" \"lib/**/*.js\"",
 		"build": "npm run clean && tsc -p tsconfig.json",
-		"test": "npm run format && nyc ava",
-		"clean": "del-cli lib",
-		"prepare": "npm run test && npm run build",
-		"deploy": "npm run prepare && npx np"
+		"test": "npm run format && npm run lint && nyc ava",
+		"clean": "del-cli lib"
 	},
 	"engines": {
 		"node": ">=8"
@@ -24,7 +22,7 @@
 		"FIFO"
 	],
 	"files": [
-		"lib"
+		"lib/**/*"
 	],
 	"author": {
 		"name": "SimonJang",
