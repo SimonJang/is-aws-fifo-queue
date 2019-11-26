@@ -1,5 +1,5 @@
 import test from 'ava';
-import isAWSFifoQueue from '../index';
+import {isAWSFifoQueue} from '../index';
 
 test('should check on the FIFO queue name', t => {
 	t.false(isAWSFifoQueue('someQueue'));
