@@ -10,7 +10,7 @@ $ npm install is-aws-fifo-queue
 ## Usage
 
 ```js
-import isAwsFifoQueue from 'is-aws-fifo-queue';
+const isAwsFifoQueue = require('is-aws-fifo-queue');
 
 isAWSFifoQueue('correct-fifo-queue.fifo'); // true
 isAWSFifoQueue('someQueue') // false
