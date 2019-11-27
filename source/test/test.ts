@@ -14,6 +14,7 @@ test('should check on the FIFO queue name', t => {
 	t.true(isAWSFifoQueue('correct-fifo-queue.fifo'));
 	t.true(isAWSFifoQueue('correct_fifo_queue.fifo'));
 	t.true(isAWSFifoQueue('correctfifoqueue.fifo'));
+	t.true(isAWSFifoQueue('1234.fifo'));
 	t.true(isAWSFifoQueue('correctFifoQueue.fifo'));
 	t.true(isAWSFifoQueue('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.fifo'));
 });
