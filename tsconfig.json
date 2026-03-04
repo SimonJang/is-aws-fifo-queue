@@ -1,24 +1,19 @@
 {
-    "compilerOptions": {
-        "target": "es2017",
-        "module": "commonjs",
-        "declaration": true,
-        "removeComments": true,
-        "pretty": true,
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false,
-        "noImplicitAny": false,
-        "noImplicitReturns": true,
-        "noImplicitUseStrict": false,
-        "noFallthroughCasesInSwitch": true,
-        "allowSyntheticDefaultImports": true,
-        "strictNullChecks": true,
-		"outDir": "lib",
-		"strict": true
-    },
-    "exclude": [
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "Node16",
+		"moduleResolution": "Node16",
+		"declaration": true,
+		"removeComments": true,
+		"pretty": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"strict": true,
+		"outDir": "lib"
+	},
+	"exclude": [
 		"node_modules",
 		"source/test",
-    	"lib"
+		"lib"
 	]
 }
